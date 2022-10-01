@@ -1,0 +1,9 @@
+export const ON_ADD = "ON_ADD";
+export const ON_REMOVE = "ON_REMOVE";
+export const ON_INC = "ON_INC";
+export const ON_DEC = "ON_DEC";
+export const ON_RES_QTY = "ON_RES_QTY";
+export const ON_TOGGLE_CART = "ON_TOGGLE_CART";
+export const ON_SHOW_CART = "ON_SHOW_CART";
+export const ON_HIDE_CART = "ON_HIDE_CART";
+export const RESET_CART = "RESET_CART";
