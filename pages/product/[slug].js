@@ -13,6 +13,7 @@ const ProductDetails = ({ product, products }) => {
   const dispatch = useDispatch();
 
   const handleBuyNow = () =>{ 
+    //debugger
     onAdd(product, qty);
 
     setShowCart(true);
@@ -73,6 +74,15 @@ const ProductDetails = ({ product, products }) => {
       </div>
 
       <div>
+
+      <div className="maylike-products-wrapper">
+          <h2>More <span className="category-name">{product.category}</span> Products</h2>
+          <div className="marquee">
+            <div className="maylike-products-container track">
+              {products.map((item) => item.category === product.category && <Product key={item._id} product={item} />)}
+            </div>
+          </div>
+        </div>
 
         <div className="maylike-products-wrapper">
           <h2>You may also like</h2>

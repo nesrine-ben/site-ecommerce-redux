@@ -554,6 +554,9 @@ padding: 6px;
 
   font-size: 28px;
 }
+.maylike-products-wrapper .category-name{
+  color: #f02d34;
+}
 .maylike-products-container{
   display: flex;
   justify-content: center;
